@@ -36,7 +36,7 @@ func zipDir(directory string) (string, error) {
 	zipFile := directory + ".zip"
 	i := 0
 	for exists(zipFile) {
-		i += 1
+		i++
 		zipFile = fmt.Sprintf("%s.%d.zip", directory, i)
 	}
 
